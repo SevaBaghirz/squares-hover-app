@@ -1,0 +1,24 @@
+.sketchpad {
+  width: 50rem;
+  height: 50rem;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  background-color: var(--secondary-light);
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3);
+  user-select: none;
+
+  @media screen and (max-width: 480px) {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .cell-pad {
+    cursor: crosshair;
+    border: var(--border);
+
+    &:hover {
+      border: 1px solid gray;
+    }
+  }
+}

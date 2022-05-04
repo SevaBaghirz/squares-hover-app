@@ -1,0 +1,59 @@
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 20rem;
+
+  input,
+  button {
+    appearance: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    font-size: 1.6rem;
+    border: 1px solid var(--primary-dark);
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+  }
+  button {
+    color: var(--secondary-light);
+    background-color: var(--button-blue);
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: var(--button-hover-blue);
+    }
+  }
+
+  select {
+    appearance: none;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    font-size: 1.6rem;
+    border: 1px solid var(--primary-dark);
+    border-radius: 5px;
+  }
+
+  input {
+    padding: unset;
+  }
+
+  label {
+    font-size: 2rem;
+    margin-bottom: -1rem;
+  }
+
+  select:required:invalid {
+    color: gray;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: black;
+  }
+}

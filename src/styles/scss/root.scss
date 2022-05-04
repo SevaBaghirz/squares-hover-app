@@ -1,0 +1,40 @@
+$main-font: 'Roboto', sans-serif;
+$primary-light: #ededed;
+$secondary-light: #fafafa;
+$primary-dark: #333;
+$button-blue: #0075d8;
+$button-hover-blue: #0b4270;
+$border: none;
+
+:root {
+  --main-font: #{$main-font};
+  --primary-light: #{$primary-light};
+  --secondary-light: #{$secondary-light};
+  --primary-dark: #{$primary-dark};
+  --button-blue: #{$button-blue};
+  --button-hover-blue: #{$button-hover-blue};
+
+  --border: #{$border};
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 60%;
+  }
+
+  @media screen and (max-width: 980px) {
+    font-size: 58%;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 55%;
+  }
+}
